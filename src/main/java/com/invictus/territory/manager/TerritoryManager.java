@@ -18,9 +18,11 @@ import java.util.Map;
 import java.util.UUID;
 
 public class TerritoryManager {
+    private final TerritoryCore plugin;
     private final Map<String, Territory> territories = new HashMap<>();
 
     public TerritoryManager(TerritoryCore territoryCore) {
+        this.plugin = territoryCore;
     }
 
     public void addTerritory(Territory territory) {
@@ -65,10 +67,11 @@ public class TerritoryManager {
     }
 
     public void teleportToTerritory(Player player, Territory territory) {
-        World chronicleWorld = Bukkit.getWorld("CHRONICLE");
+        String worldName = plugin.getConfig().getString("world", "CHRONICLE");
+        World chronicleWorld = Bukkit.getWorld(worldName);
 
         if (chronicleWorld == null) {
-            player.sendMessage(MessageUtils.colorize("&c❌ Error: El mundo CHRONICLE no existe"));
+            player.sendMessage(MessageUtils.colorize("&c❌ Error: El mundo " + worldName + " no existe"));
             return;
         }
 

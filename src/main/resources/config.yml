@@ -10,6 +10,9 @@ prefixes:
   error: "&8[&c✖&8]"
   info: "&8[&b&lℹ&8]"
 
+# Mundo donde se generan los territorios
+world: "CHRONICLE"
+
 # Configuración de reclamación de territorios
 claiming:
   radius_per_player: 10

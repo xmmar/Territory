@@ -139,7 +139,8 @@ public class TerritoryLoader {
         }
 
         // Crear BoundingBox temporal (debe ser configurado después por admin)
-        Location center = new Location(plugin.getServer().getWorld("CHRONICLE"), 0, 64, 0);
+        String worldName = plugin.getConfig().getString("world", "CHRONICLE");
+        Location center = new Location(plugin.getServer().getWorld(worldName), 0, 64, 0);
         int radius = size.getBaseRadius();
         Location min = center.clone().subtract(radius, 0, radius);
         Location max = center.clone().add(radius, 256, radius);
