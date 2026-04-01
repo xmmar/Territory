@@ -1,0 +1,375 @@
+# ================================================
+# TerritoryCore - Configuración Principal
+# ================================================
+
+# Prefixes para mensajes del plugin
+prefixes:
+  main: "&8[&6⚔ &e&lChronicle&6&lTerritory &6⚔&8]"
+  admin: "&8[&4⚡ &c&lADMIN &4⚡&8]"
+  success: "&8[&a✔&8]"
+  error: "&8[&c✖&8]"
+  info: "&8[&b&lℹ&8]"
+
+# Configuración de reclamación de territorios
+claiming:
+  radius_per_player: 10
+  max_radius: 250
+
+# Configuración de territorios
+territories:
+  # Radio de cada territorio en bloques
+  radius: 250
+
+  # Protección de bloques
+  protection:
+    enabled: true
+    allow_owner_build: true
+    allow_owner_break: true
+    allow_member_build: false
+    allow_member_break: false
+    allow_non_member_build: false
+    allow_non_member_break: false
+
+# Mensajes personalizados
+messages:
+  # Errores
+  no_permission: "&cNo tienes permisos"
+  territory_not_found: "&cTerritorio no encontrado"
+  already_claimed: "&cEste territorio ya está reclamado"
+  not_owner: "&cNo eres el dueño de este territorio"
+  too_far: "&cEl territorio está demasiado lejos"
+
+  # Éxito
+  territory_claimed: "&a✓ ¡Territorio reclamado exitosamente!"
+  territory_unclaimed: "&a✓ ¡Territorio liberado!"
+  territory_created: "&a✓ Territorio creado exitosamente"
+  territory_deleted: "&a✓ Territorio eliminado"
+
+  # Información
+  territory_info: "&eTerritorio: {name}"
+  territory_owner: "&eDueño: {owner}"
+  territory_size: "&eTamaño: {size}"
+  territory_level: "&eNivel: {level}"
+
+# Configuración de sonidos
+sounds:
+  # Territorios de Grecia
+  monte_olimpo:
+    sound: "MUSIC_DISC_WAIT"
+    volume: 2.0
+    pitch: 0.8
+
+  esparta:
+    sound: "MUSIC_DISC_WARD"
+    volume: 2.0
+    pitch: 1.3
+
+  bosque_artemisa:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 0.9
+
+  atenas_antigua:
+    sound: "MUSIC_DISC_CHIRP"
+    volume: 2.0
+    pitch: 1.0
+
+  acantilados_poseidon:
+    sound: "MUSIC_DISC_MALL"
+    volume: 2.0
+    pitch: 0.85
+
+  santuario_apolo:
+    sound: "MUSIC_DISC_WAIT"
+    volume: 2.0
+    pitch: 0.95
+
+  ruinas_delfos:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.1
+
+  valle_ares:
+    sound: "MUSIC_DISC_WARD"
+    volume: 2.0
+    pitch: 1.2
+
+  coloso_rodas:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.15
+
+  islas_egeas:
+    sound: "MUSIC_DISC_MALL"
+    volume: 2.0
+    pitch: 0.9
+
+  # Territorios de Egipto
+  piramide_keops:
+    sound: "MUSIC_DISC_WARD"
+    volume: 2.0
+    pitch: 1.1
+
+  valle_reyes:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.15
+
+  oasis_bastet:
+    sound: "MUSIC_DISC_WAIT"
+    volume: 2.0
+    pitch: 0.9
+
+  desierto_set:
+    sound: "MUSIC_DISC_WARD"
+    volume: 2.0
+    pitch: 1.2
+
+  templo_anubis:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.05
+
+  rio_nilo:
+    sound: "MUSIC_DISC_MALL"
+    volume: 2.0
+    pitch: 0.95
+
+  biblioteca_thoth:
+    sound: "MUSIC_DISC_WAIT"
+    volume: 2.0
+    pitch: 0.85
+
+  necropolis:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.2
+
+  templo_solar_ra:
+    sound: "MUSIC_DISC_CHIRP"
+    volume: 2.0
+    pitch: 1.0
+
+  laberinto_sobek:
+    sound: "MUSIC_DISC_MALL"
+    volume: 2.0
+    pitch: 1.05
+
+  # Territorios Centrales
+  ruinas_imperio:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.3
+
+  arena_titanes:
+    sound: "MUSIC_DISC_WARD"
+    volume: 2.0
+    pitch: 1.25
+
+  puerta_inframundo:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.2
+
+  ciudad_perdida:
+    sound: "MUSIC_DISC_MALL"
+    volume: 2.0
+    pitch: 1.1
+
+  trono_dominador:
+    sound: "MUSIC_DISC_STRAD"
+    volume: 2.0
+    pitch: 1.35
+
+# Configuración de partículas
+particles:
+  # Habilitar/deshabilitar partículas
+  enabled: true
+
+  # Frecuencia de las partículas (en ticks)
+  frequency: 2
+
+  # Rango de las partículas
+  range: 3
+
+  # Cantidad de partículas
+  amount: 1
+
+# Configuración de efectos de poción
+effects:
+  # Habilitar/deshabilitar efectos
+  enabled: true
+
+  # Duración de los efectos (en ticks, -1 = infinito mientras estés en el territorio)
+  duration: -1
+
+  # Amplitud de los efectos (0 = nivel I, 1 = nivel II, etc.)
+  amplifier: 0
+
+# Configuración de mobs escalados
+mobs:
+  # Habilitar/deshabilitar escalado de mobs
+  enabled: true
+
+  # Mostrar nivel del mob en el nombre
+  show_level: true
+
+  # Formato del nivel en el nombre
+  level_format: "&e[Lvl {level}]"
+
+# Configuración de estadísticas de territorios
+statistics:
+  # Nivel de cada territorio
+  levels:
+    monte_olimpo: 10
+    esparta: 25
+    bosque_artemisa: 20
+    atenas_antigua: 15
+    acantilados_poseidon: 18
+    santuario_apolo: 16
+    ruinas_delfos: 22
+    valle_ares: 28
+    coloso_rodas: 50
+    islas_egeas: 30
+    piramide_keops: 35
+    valle_reyes: 40
+    oasis_bastet: 12
+    desierto_set: 35
+    templo_anubis: 38
+    rio_nilo: 18
+    biblioteca_thoth: 20
+    necropolis: 55
+    templo_solar_ra: 25
+    laberinto_sobek: 45
+    ruinas_imperio: 60
+    arena_titanes: 50
+    puerta_inframundo: 55
+    ciudad_perdida: 52
+    trono_dominador: 100
+
+# Configuración de upkeep (mantenimiento)
+upkeep:
+  # Habilitar/deshabilitar upkeep
+  enabled: false
+
+  # Cantidad base de dinero por día
+  base_amount: 1000
+
+  # Multiplicador según el nivel del territorio
+  level_multiplier: 100
+
+# Configuración de eventos
+events:
+  # Evento de entrada a territorio
+  entry_event:
+    enabled: true
+    show_title: true
+    show_action_bar: true
+    play_sound: true
+    spawn_particles: true
+
+  # Evento de salida del territorio
+  exit_event:
+    enabled: true
+    remove_effects: true
+
+# Configuración de integración con otros plugins
+integrations:
+  # AuraSkills
+  aura_skills:
+    enabled: true
+    apply_effects: true
+
+  # BlockParticles
+  block_particles:
+    enabled: true
+    particle_density: 1
+
+  # BiomeEffects
+  biome_effects:
+    enabled: true
+
+  # LevelledMobs
+  levelled_mobs:
+    enabled: true
+    scale_mobs: true
+
+  # zMenu
+  zmenu:
+    enabled: true
+    menu_name_territorios: "territorios"
+    menu_name_grecia: "grecia"
+    menu_name_egipto: "egipto"
+    menu_name_central: "central"
+
+# Configuración de base de datos
+database:
+  # Tipo de base de datos (sqlite, mysql, etc.)
+  type: "sqlite"
+
+  # Configuración de SQLite
+  sqlite:
+    file: "territories.db"
+
+  # Configuración de MySQL (si lo usas)
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "territories"
+    username: "root"
+    password: "password"
+    use_ssl: false
+
+# Configuración de spawns y zonas seguras
+spawns:
+  # Radio de la zona segura alrededor del spawn (en bloques)
+  safe_zone_radius: 50
+
+  # Prevenir spawn de mobs hostiles en zona segura
+  prevent_hostile_spawns: true
+
+  # Cargar schematic automáticamente
+  load_schematics: true
+
+# Configuración de mobs temáticos por territorio
+territory_mobs:
+  enabled: true
+
+  # Mobs específicos por territorio (se spawnean naturalmente)
+  custom_spawns:
+    # Territorios Griegos
+    monte_olimpo:
+      - "PHANTOM:5:§b✦ Espíritu del Olimpo"
+      - "BLAZE:3:§6⚡ Guardián Divino"
+
+    esparta:
+      - "ZOMBIE:10:§4⚔ Guerrero Espartano"
+      - "SKELETON:8:§7🏹 Arquero de Esparta"
+      - "IRON_GOLEM:2:§f⚔ Campeón Espartano"
+
+    bosque_artemisa:
+      - "WOLF:5:§2🐺 Lobo de Artemisa"
+      - "SPIDER:7:§8🕷 Araña del Bosque"
+
+    # Territorios Egipcios
+    piramide_keops:
+      - "HUSK:10:§6⚰ Momia Guardiana"
+      - "WITHER_SKELETON:3:§8☠ Faraón Maldito"
+
+    desierto_set:
+      - "HUSK:15:§c☠ Soldado de Set"
+      - "RAVAGER:1:§4🐗 Bestia del Desierto"
+
+    # Territorios Centrales
+    ruinas_imperio:
+      - "ZOMBIE:12:§4👑 Legionario Imperial"
+      - "SKELETON:12:§7🏹 Arquero Imperial"
+      - "VINDICATOR:5:§c⚔ Guardia Imperial"
+
+# Debug
+debug:
+  enabled: false
+  log_territory_checks: false
+  log_particle_spawning: false
+  log_effect_application: false
+  log_mob_spawns: false

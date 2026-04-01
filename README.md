@@ -1,0 +1,2 @@
+# TerritoryCore
+Sistema de Territorios.

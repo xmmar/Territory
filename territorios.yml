@@ -1,0 +1,24 @@
+name: Territorios
+size: 45
+items:
+  btn-1:
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 1-7
+      - 37-43
+  btn-22:
+    slot: 22
+    item:
+      material: ENDER_EYE
+      name: '&#F65858&l&oC&#FB4747&l&oe&#FF3636&l&on&#FF2A2A&l&ot&#B71818&l&or&#6E0505&l&oa&#732929&l&ol'
+  btn-25:
+    slot: 25
+    item:
+      material: TOTEM_OF_UNDYING
+      name: '&#D27C0C&l&oE&#FC794F&l&og&#FE6B46&l&oi&#FF5C3C&l&op&#FF5815&l&ot&#D62F2F&l&oo'
+  btn-19:
+    slot: 19
+    item:
+      material: TRIDENT
+      name: '&#0C72D2&l&oG&#4FA8FC&l&or&#46D4E6&l&oe&#3CFFD0&l&oc&#15FF84&l&oi&#2FD66A&l&oa'

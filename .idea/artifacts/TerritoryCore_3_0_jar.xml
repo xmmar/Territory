@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TerritoryCore-3.0:jar">
+    <output-path>$USER_HOME$/Desktop/TerritoryCore.2</output-path>
+    <root id="archive" name="TerritoryCore-3.0.jar">
+      <element id="module-output" name="TerritoryCore" />
+    </root>
+  </artifact>
+</component>
